@@ -1,16 +1,17 @@
 package org.lewickiy.benchmark;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class BenchmarkReadSpeedLinkedListArray extends Benchmark {
     List linkedList;
-    Integer[] array;
+    List array;
 
     public Long readArray() {
         start();
-        for (Integer i : array) {
-            var t = i;
+        for (Object o : array) {
+            var v = o;
         }
         end();
         return getTimeInMs();
@@ -26,13 +27,13 @@ public class BenchmarkReadSpeedLinkedListArray extends Benchmark {
 
     public BenchmarkReadSpeedLinkedListArray(int size) {
         linkedList = new LinkedList<Integer>();
-        array = new Integer[size];
+        array = new ArrayList<Integer>();
         init(size);
     }
     private void init(int size) {
         for (int i = 0; i < size; i++) {
             linkedList.add(i);
-            array[i] = i;
+            array.add(i);
         }
     }
 }

@@ -5,7 +5,7 @@ public abstract class Benchmark {
     long endTime;
 
     protected Long getTimeInMs() {
-        return (endTime - startTime) / 1000000;
+        return (endTime - startTime);
     }
 
     protected void start() {
