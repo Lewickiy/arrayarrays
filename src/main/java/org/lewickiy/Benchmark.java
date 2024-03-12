@@ -7,7 +7,9 @@ public class Benchmark {
     String[][] st;
 
     public Benchmark(int arrayX, int arrayY) {
-        st = new String[arrayX][arrayY];
+        int x = arrayX <= 0 ? 1 : arrayX;
+        int y = arrayY <= 0 ? 1 : arrayY;
+        st = new String[x][y];
         init();
     }
 
@@ -34,9 +36,9 @@ public class Benchmark {
 
     public Long getTimeByRow() {
         start();
-        for (int i = 0; i < st.length; i++) {
+        for (String[] strings : st) {
             for (int i1 = 0; i1 < st.length; i1++) {
-                String s = st[i][i1];
+                var string = strings[i1];
             }
         }
         end();
@@ -46,8 +48,8 @@ public class Benchmark {
     public Long getTimeByColumn() {
         start();
         for (int i = 0; i < st.length; i++) {
-            for (int i1 = 0; i1 < st.length; i1++) {
-                String s = st[i1][i];
+            for (String[] strings : st) {
+                var string = strings[i];
             }
         }
         end();
