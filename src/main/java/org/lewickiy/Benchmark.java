@@ -36,9 +36,9 @@ public class Benchmark {
 
     public Long getTimeByRow() {
         start();
-        for (String[] strings : st) {
-            for (int i1 = 0; i1 < st.length; i1++) {
-                var string = strings[i1];
+        for (String[] column : st) {
+            for (int row = 0; row < st.length; row++) {
+                var string = column[row];
             }
         }
         end();
@@ -47,9 +47,9 @@ public class Benchmark {
 
     public Long getTimeByColumn() {
         start();
-        for (int i = 0; i < st.length; i++) {
-            for (String[] strings : st) {
-                var string = strings[i];
+        for (int row = 0; row < st.length; row++) {
+            for (String[] colimn : st) {
+                var string = colimn[row];
             }
         }
         end();
