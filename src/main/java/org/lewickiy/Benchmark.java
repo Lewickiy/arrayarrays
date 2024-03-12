@@ -48,8 +48,8 @@ public class Benchmark {
     public Long getTimeByColumn() {
         start();
         for (int row = 0; row < st.length; row++) {
-            for (String[] colimn : st) {
-                var string = colimn[row];
+            for (String[] column : st) {
+                var string = column[row];
             }
         }
         end();
