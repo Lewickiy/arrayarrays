@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Сравнение скорости удаления первого элемента из LinkedList и ArrayList
+ */
 public class RemoveFirstFromLinkedListOrArray extends Benchmark {
     List linkedList;
     ArrayList array;

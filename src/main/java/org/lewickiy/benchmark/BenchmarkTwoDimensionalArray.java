@@ -1,5 +1,8 @@
 package org.lewickiy.benchmark;
 
+/**
+ * Сравнение скорости чтения двумерного массива по строкам и по столбцам
+ */
 public class BenchmarkTwoDimensionalArray extends Benchmark {
 
     String[][] st;

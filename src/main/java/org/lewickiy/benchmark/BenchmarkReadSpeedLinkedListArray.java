@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Сравнение скорости чтения ArrayList и LinkedList
+ */
 public class BenchmarkReadSpeedLinkedListArray extends Benchmark {
     List linkedList;
     List array;
