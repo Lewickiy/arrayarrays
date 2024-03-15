@@ -20,7 +20,7 @@ public class Main {
         Удаление первого элемента из ArrayList или LinkedList. В зависимости от размера коллекций:
         на ~5 элементах ArrayList быстрее
         на 900-25000 скорость примерно одинаковая
-        на больших размерах LinkedList быстрее и стабильен в скорости вне зависимости от размера
+        на больших размерах LinkedList быстрее и стабилен в скорости вне зависимости от размера
         */
         RemoveFirstFromLinkedListOrArray bmThree = new RemoveFirstFromLinkedListOrArray(5);
         System.out.println("Remove first Array in ms. " + bmThree.removeFirstFromArray());
