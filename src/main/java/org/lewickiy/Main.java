@@ -6,7 +6,6 @@ import org.lewickiy.benchmark.RemoveFirstFromLinkedListOrArray;
 
 public class Main {
     public static void main(String[] args) {
-        //Info
         //Время чтения ArrayList или LinkedList
         BenchmarkReadSpeedLinkedListArray bmTwo = new BenchmarkReadSpeedLinkedListArray(5000000);
         System.out.println("Read Array in ms. " + bmTwo.readArray());
