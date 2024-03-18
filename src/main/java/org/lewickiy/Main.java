@@ -6,6 +6,7 @@ import org.lewickiy.benchmark.RemoveFirstFromLinkedListOrArray;
 
 public class Main {
     public static void main(String[] args) {
+        //Info
         //Время чтения двумерного массива по строкам и по столбцам
         BenchmarkTwoDimensionalArray bmOne = new BenchmarkTwoDimensionalArray(5000, 5000);
         System.out.println("Time is ms. by row " + bmOne.getTimeByRow());
