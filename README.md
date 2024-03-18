@@ -1,2 +1,2 @@
-- How to reed a two-demensional array faster: row by row or column by column?
+- How to reed a two-dimensional array faster: row by row or column by column?
 - 
