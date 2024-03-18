@@ -1,1 +1,2 @@
-#### Как прочитать двумерный массив: по столбцам или по строкам?
+- How to reed a two-demensional array faster: row by row or column by column?
+- 
