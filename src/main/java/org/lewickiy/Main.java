@@ -7,11 +7,6 @@ import org.lewickiy.benchmark.RemoveFirstFromLinkedListOrArray;
 public class Main {
     public static void main(String[] args) {
         //Info
-        //Время чтения двумерного массива по строкам и по столбцам
-        BenchmarkTwoDimensionalArray bmOne = new BenchmarkTwoDimensionalArray(5000, 5000);
-        System.out.println("Time is ms. by row " + bmOne.getTimeByRow());
-        System.out.println("Time is ms. by column " + bmOne.getTimeByColumn() + "\n");
-
         //Время чтения ArrayList или LinkedList
         BenchmarkReadSpeedLinkedListArray bmTwo = new BenchmarkReadSpeedLinkedListArray(5000000);
         System.out.println("Read Array in ms. " + bmTwo.readArray());
@@ -26,6 +21,5 @@ public class Main {
         RemoveFirstFromLinkedListOrArray bmThree = new RemoveFirstFromLinkedListOrArray(5);
         System.out.println("Remove first Array in ms. " + bmThree.removeFirstFromArray());
         System.out.println("Remove first LinkedList in ms. " + bmThree.removeFirstFromLinkedList() + "\n");
-
     }
 }
